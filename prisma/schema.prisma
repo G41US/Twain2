@@ -14,5 +14,7 @@ model User {
   image         String?
   ethnicity     String?
   showEthnicity Boolean  @default(false)
+  role          String   @default("user")  // 👈 NEW
   createdAt     DateTime @default(now())
 }
+
